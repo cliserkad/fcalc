@@ -1,0 +1,30 @@
+type Fcalc {
+
+  main {
+    if args.size != 3 {
+      println("Usage: Fcalc <n1> <operator> <n2>")
+      print("input was: ")
+      for i = ..args.size {
+        print(args[i])
+        print(" ")
+      }
+      println("")
+      return
+    } else {
+        i32 n1 = parseInt(args[0])
+        i32 n2 = parseInt(args[2])
+
+        if args[1] == "+" {
+            println(n1 + n2)
+        } else if args[1] == "-" {
+            println(n1 - n2)
+        } else if args[1] == "x" {
+            println(n1 * n2)
+        } else if args[1] == "/" {
+            println(n1 / n2)
+        } else {
+            println("Unknown operator: " + args[1])
+        }
+    }
+  }
+}

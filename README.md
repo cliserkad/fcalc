@@ -1,4 +1,4 @@
-# fiz-base
-Sample fiz project built with Maven
+# fcalc
+A calculator sample program written in fiz
 
 [fiz repo](https://github.com/cliserkad/fiz)
